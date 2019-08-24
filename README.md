@@ -1,3 +1,4 @@
 # englishnumber
 I was working on ap module of erp with php years ago.  I needed to print checks with amount and there should be english words of the amount as you have to wright on your own personal checks.  And one of my client who came from Kazakhstan was in trouble to his own checks.  He got a paper of english numbers and used the old worn paper all the time.  I wanted to help him and I got a chance to wright php codes of english words of check amount.  After I coded, he was happy and the check printing part of account payables module was working well.
 I found my old php code recently and rewrite it with python.  There will be a gui version soon with TkInter soon for the people who have hard time to write english amount on his/her own checks.  Maybe golang version too.  
+Also there is a sample on the bottome of file.  It may not be hard to use.  I hope :) 
