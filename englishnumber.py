@@ -40,25 +40,25 @@ class EnglishNumber:
         self.english.insert(0,self.numbers[threelist[0]])
       elif len(threelist)==2:
         if threelist[0]>1:
-          self.english.insert(0,self.numbers[threelist[1]])          
+          self.english.insert(0,self.numbers[threelist[1]])
           self.english.insert(0,self.numbers[threelist[0]*10])
         else:
           self.english.insert(0,self.numbers[threelist[0]*10+threelist[1]])
       elif len(threelist)==3:
         if threelist[1]>1:
-          self.english.insert(0,self.numbers[threelist[2]])          
+          self.english.insert(0,self.numbers[threelist[2]])
           self.english.insert(0,self.numbers[threelist[1]*10])
         else:
           self.english.insert(0,self.numbers[threelist[1]*10+threelist[2]])
         if threelist[0]>0:
-          self.english.insert(0,self.numbers[100])          
-          self.english.insert(0,self.numbers[threelist[0]])          
+          self.english.insert(0,self.numbers[100])
+          self.english.insert(0,self.numbers[threelist[0]])
     return True
 
   def GetNumber(self):
     left = " ".join([x for x in self.english if x]).strip()
     if not left: left='None'
-    return "%s and %s/100 " % (left.title(),self.rights)
+    return ("%s and %s/100 " % (left.title(),self.rights)).strip()
 
 if __name__=='__main__':
   a = ['0.01','1.25','12.34','119.12','1001.34','1211.45','1234567.68']
@@ -72,5 +72,3 @@ if __name__=='__main__':
     x *= 1.9
     en.SetNumber("%0.2f"%x)
     print ("%0.2f"%x,en.GetNumber())
-
-
